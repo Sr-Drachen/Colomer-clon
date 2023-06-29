@@ -17,6 +17,8 @@ const url = `${window.location.origin}/api/admin`;
 
 const form = document.querySelector('#admin-form');
 
+var invalidDescriptionDiv = document.getElementById("invalidDescriptionDiv");
+
 (() => {
   const tablaDatos = document.querySelector('#tablaDatos');
   const logoutButton = document.querySelector('#logoutButton');
@@ -76,7 +78,8 @@ const form = document.querySelector('#admin-form');
       editButton.textContent = "Editar";
       editButton.classList.add('btn', 'btn-primary', 'btn-editar');
       editButton.dataset.hotspotId = `Lote ${hotspot.title}`;
-      editButton.dataset.description =  `${hotspot.info.description.replace(/m²/g, 'm²\n')}Precio: ${hotspot.info.info}\nEstado: ${statusCell.textContent}`;
+      editButton.dataset.id = hotspot.id;
+      editButton.dataset.description =  `${hotspot.info.description.replace(/m²/g, 'm²\n')}Precio: ${hotspot.info.info}`;
       editButton.dataset.estado = hotspot.skinid;
       editButton.onclick = openModalWithHotspotId;
       descriptionCell.appendChild(editButton);
@@ -139,12 +142,13 @@ const form = document.querySelector('#admin-form');
     }   
 
   function openModalWithHotspotId(event) {
+    invalidDescriptionDiv.style.display = "none";
     const hotspotId = event.target.dataset.hotspotId;
     const hotspotDescription = event.target.dataset.description;
     const nameInput = document.getElementById("nameInput");
     const descriptionInput = document.getElementById("descriptionTextarea");
     const estadoInput = document.getElementById("status")
-    currentHotspotId = hotspotId;
+    currentHotspotId = event.target.dataset.id;
     nameInput.value = hotspotId;
     descriptionInput.value = hotspotDescription.replace(/<[^>]+>/g, '');
     estadoInput.value = event.target.dataset.estado;
@@ -156,11 +160,8 @@ const form = document.querySelector('#admin-form');
     var name = document.getElementById("nameInput").value;
     var status = document.getElementById("status").value;
     const hotspot = hotspotsXML.find((hotspot) => hotspot.id === currentHotspotId);
-
-    // if (!hotspot) document.getElementById('status').checked = false;
-
+    
     if (hotspot) {
-      // document.getElementById('status').value =
         hotspot.skinid = status;
         hotspot.name = name;
     }
@@ -168,39 +169,58 @@ const form = document.querySelector('#admin-form');
     if (token !== 'logout' && isJWTToken) {
 
       const values = getAllFormValues();
-      optionsPUT.body = JSON.stringify(values);
-
-      fetch(url, optionsPUT)
-        .then((response) => {
-        // responseAlertCreate('Actualización Exitosa');
-            location.reload();
-            return response.json();
-          })
-          .then(() => cleanInputs())
-          .catch((error) => {
-            // responseAlertCreate(
-            //   'Ocurrio un error, por favor intentelo en unos minutos',
-            //   true
-            // );
-            console.error(error);
-          });
-
-          closeModal();
+      
+      if (values) {
+        
+        optionsPUT.body = JSON.stringify(values);
+        console.log("matches: ");
+        console.log(optionsPUT.body);
+        
+        fetch(url, optionsPUT)
+          .then((response) => {
+              location.reload();
+              return response.json();
+            })
+            .then(() => cleanInputs())
+            .catch((error) => {
+              console.error(error);
+            });
+    
+            closeModal();
+      }
     }
   }
 
   const getAllFormValues = () => {
-    const loteId = currentHotspotId;
-    const title = document.getElementById("nameInput").value;
-    // const surface = document.getElementById('surface').value;
-    // const price = document.getElementById('price').value;
-    const status = document.getElementById('status').value === 'ht_disponible' ? true : false;
-    // const description = document.getElementById('description').value;
-
-    return {
-      lotId: loteId,
-      status
-    };
+    const inputTextArea = document.getElementById("descriptionTextarea");
+    const editedText = inputTextArea.value;
+  
+    // Extraer los valores modificados de las variables
+    const regex = /Sup\. Total: ([\d\.,]+) m²\nServidumbre: ([\d\.,]+) m²\nSup\. Parcial: ([\d\.,]+) m²\nPrecio: (.*)/;
+    const matches = editedText.match(regex);
+  
+    if (matches && matches.length === 5) {
+      invalidDescriptionDiv.style.display = "none";
+      const supTotal = matches[1];
+      const servidumbre = matches[2];
+      const supParcial = matches[3];
+      const info = matches[4];
+      
+      const loteId = currentHotspotId;
+      const status = document.getElementById('status').value === 'ht_disponible' ? true : false;
+      const description = 
+        `<b>Sup. Total:</b> ${supTotal} m²<br><b>Servidumbre:</b> ${servidumbre} m²<br><b>Sup. Parcial:</b> ${supParcial} m²<br>`;
+      return {
+        lotId: loteId,
+        status,
+        description,
+        info // precio
+      };
+    } else {
+      invalidDescriptionDiv.style.display = "block";
+      console.log("no matches");
+      return null;
+    }
   };
 
   // Esto no sirve que alguien lo arregle para mostrar otro tipo de mensaje (Opcional)

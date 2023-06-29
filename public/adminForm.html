@@ -68,11 +68,11 @@
           </div>
           <div class="modal-body">
             <h6 class="modal-subtitle">Nombre</h6>
-            <input id="nameInput" class="form-control modal-input" type="text" required>
+            <input id="nameInput" class="form-control modal-input" type="text" readonly>
             
             <h6 class="modal-subtitle">Descripción</h6>
-            <textarea id="descriptionTextarea" class="form-control modal-textarea" readonly></textarea>
-
+            <textarea id="descriptionTextarea" class="form-control modal-textarea"></textarea>
+            <div id="invalidDescriptionDiv" class="not-valid-description">Descripción no válida</div>
             <h6 class="modal-subtitle">Estado</h6>
             <div class="form-group">
               <select id="status" name="status" class="form-control modal-select">

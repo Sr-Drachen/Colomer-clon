@@ -5,7 +5,7 @@ const {
 } = require('../helpers/modifyXML');
 
 const updateLot = async (req, res) => {
-  const { lotId, info, status = true } = req.body;
+  const { lotId, status = true, description, info } = req.body;
 
   if (!lotId) {
     return res.status(400).json({
@@ -13,7 +13,7 @@ const updateLot = async (req, res) => {
     });
   }
   try {
-    const error = await updateHotspotAttributes(lotId, status, info);
+    const error = await updateHotspotAttributes(lotId, status, description, info);
 
     if (error) {
       return res.status(400).json({ message: error });

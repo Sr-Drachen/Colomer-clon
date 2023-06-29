@@ -592,7 +592,7 @@
       <min tilt="-90" fovpixel="2" pan="0"/>
       <max fov="120" scaletofit="1" fovstereographic="270" tilt="90" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node19" description="&lt;b>Sup. Total:&lt;/b> 5.470,10 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 812,9 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b> 6.283,0m²&lt;br>" copyright="" datetime="" latitude="" customnodeid="lote19" comment="" author="" longitude="" info="$18.900.000" title="Lote A" source="" tags="Fotos piso|lotesecundario|mostrar"/>
+    <userdata nodeid="node19" description="&lt;b>Sup. Total:&lt;/b> 5.470,10 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 812,9 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b> 6.283,0m²&lt;br>" copyright="" datetime="" latitude="" customnodeid="lote19" comment="" author="" longitude="" info="$18.900.000" title="Lote A" source="" tags="mostrar"/>
     <hotspots width="180" wordwrap="1" height="20">
       <label textcolor="0x000000" borderradius="1" background="1" enabled="1" width="180" backgroundalpha="1" bordercolor="0x000000" wordwrap="1" height="20" backgroundcolor="0xffffff" borderalpha="1" border="1" textalpha="1"/>
       <polystyle mode="1" backgroundalpha="0" bordercolor="0xffffff" backgroundcolor="0x0000ff" borderalpha="1" handcursor="0"/>

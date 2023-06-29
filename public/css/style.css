@@ -95,7 +95,7 @@ tr:nth-child(even) {
 .modal-textarea {
     font-weight: 300;
     width: 100%;
-    height: 132px;
+    height: 7em;
     padding: 5px;
     margin-bottom: 10px;
 }
@@ -114,4 +114,9 @@ tr:nth-child(even) {
 .close:hover{
     color: white;
     background-color: #235bc1;
+}
+
+.not-valid-description {
+    display: none;
+    color: red;
 }
