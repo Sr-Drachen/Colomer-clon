@@ -1,5 +1,8 @@
 let hotspotsXML = [];
 let currentHotspotId = "";
+let suptotal = "";
+let servidumbre = "";
+let supparcial = "";
 
 const token = getCookie('jwt') || 'logout';
 let isJWTToken = true;
@@ -79,7 +82,9 @@ var invalidDescriptionDiv = document.getElementById("invalidDescriptionDiv");
       editButton.classList.add('btn', 'btn-primary', 'btn-editar');
       editButton.dataset.hotspotId = `Lote ${hotspot.title}`;
       editButton.dataset.id = hotspot.id;
-      editButton.dataset.description =  `${hotspot.info.description.replace(/m²/g, 'm²\n')}Precio: ${hotspot.info.info}`;
+      // editButton.dataset.description =  `${hotspot.info.description.replace(/m²/g, 'm²\n')}Precio: ${hotspot.info.info}`;
+      editButton.dataset.descriptionObject = getVarsFromDescription(hotspot.info.description);
+      editButton.dataset.info = hotspot.info.info;
       editButton.dataset.estado = hotspot.skinid;
       editButton.onclick = openModalWithHotspotId;
       descriptionCell.appendChild(editButton);
@@ -145,16 +150,41 @@ var invalidDescriptionDiv = document.getElementById("invalidDescriptionDiv");
     invalidDescriptionDiv.style.display = "none";
     const hotspotId = event.target.dataset.hotspotId;
     const hotspotDescription = event.target.dataset.description;
+    const hotspotInfo = event.target.dataset.info;
     const nameInput = document.getElementById("nameInput");
     const descriptionInput = document.getElementById("descriptionTextarea");
     const estadoInput = document.getElementById("status")
+    const precioInput = document.getElementById("precioInput")
+    const suptotalInput = document.getElementById("suptotalInput")
+    const servidumbreInput = document.getElementById("servidumbreInput")
+    const subparcialInput = document.getElementById("subparcialInput");
     currentHotspotId = event.target.dataset.id;
+    precioInput.value = hotspotInfo;
     nameInput.value = hotspotId;
     descriptionInput.value = hotspotDescription.replace(/<[^>]+>/g, '');
     estadoInput.value = event.target.dataset.estado;
-    
+    suptotalInput.value = event.target.dataset.description.suptotal;
+    servidumbreInput.value = event.target.dataset.description.servidumbre;
+    subparcialInput.value = event.target.dataset.description.supparcial;
     openModal();
   }
+
+  function getVarsFromDescription(description){
+    const regex = /Sup\. Total: ([\d\.,]+) m²\nServidumbre: ([\d\.,]+) m²\nSup\. Parcial: ([\d\.,]+) m²/;
+    const matches = description.match(regex);
+  
+    if (matches && matches.length === 4) {
+      suptotal = matches[1];
+      servidumbre = matches[2];
+      supparcial = matches[3];
+    }
+
+    return {
+      suptotal,
+      servidumbre,
+      supparcial
+    }
+  } 
 
   function saveChanges() {
     var name = document.getElementById("nameInput").value;
@@ -204,7 +234,6 @@ var invalidDescriptionDiv = document.getElementById("invalidDescriptionDiv");
       const supTotal = matches[1];
       const servidumbre = matches[2];
       const supParcial = matches[3];
-      const info = matches[4];
       
       const loteId = currentHotspotId;
       const status = document.getElementById('status').value === 'ht_disponible' ? true : false;
