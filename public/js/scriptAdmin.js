@@ -83,7 +83,10 @@ var invalidDescriptionDiv = document.getElementById("invalidDescriptionDiv");
       editButton.dataset.hotspotId = `Lote ${hotspot.title}`;
       editButton.dataset.id = hotspot.id;
       // editButton.dataset.description =  `${hotspot.info.description.replace(/m²/g, 'm²\n')}Precio: ${hotspot.info.info}`;
-      editButton.dataset.descriptionObject = getVarsFromDescription(hotspot.info.description);
+      const descriptionObject = getVarsFromDescription(hotspot.info.description)
+      editButton.dataset.suptotal = descriptionObject.suptotal;
+      editButton.dataset.servidumbre = descriptionObject.servidumbre;
+      editButton.dataset.supparcial = descriptionObject.supparcial;
       editButton.dataset.info = hotspot.info.info;
       editButton.dataset.estado = hotspot.skinid;
       editButton.onclick = openModalWithHotspotId;
@@ -157,20 +160,20 @@ var invalidDescriptionDiv = document.getElementById("invalidDescriptionDiv");
     const precioInput = document.getElementById("precioInput")
     const suptotalInput = document.getElementById("suptotalInput")
     const servidumbreInput = document.getElementById("servidumbreInput")
-    const subparcialInput = document.getElementById("subparcialInput");
+    const supparcialInput = document.getElementById("supparcialInput");
     currentHotspotId = event.target.dataset.id;
     precioInput.value = hotspotInfo;
     nameInput.value = hotspotId;
-    descriptionInput.value = hotspotDescription.replace(/<[^>]+>/g, '');
+    // descriptionInput.value = hotspotDescription.replace(/<[^>]+>/g, '');
     estadoInput.value = event.target.dataset.estado;
-    suptotalInput.value = event.target.dataset.description.suptotal;
-    servidumbreInput.value = event.target.dataset.description.servidumbre;
-    subparcialInput.value = event.target.dataset.description.supparcial;
+    suptotalInput.value = event.target.dataset.suptotal;
+    servidumbreInput.value = event.target.dataset.servidumbre;
+    supparcialInput.value = event.target.dataset.supparcial;
     openModal();
   }
 
   function getVarsFromDescription(description){
-    const regex = /Sup\. Total: ([\d\.,]+) m²\nServidumbre: ([\d\.,]+) m²\nSup\. Parcial: ([\d\.,]+) m²/;
+    const regex = /<b>Sup\. Total:<\/b> ([\d\.,]+) m²<br><b>Servidumbre:<\/b> ([\d\.,]+) m²<br><b>Sup\. Parcial:<\/b> ([\d\.,]+) m²<br>/;
     const matches = description.match(regex);
   
     if (matches && matches.length === 4) {
@@ -223,17 +226,19 @@ var invalidDescriptionDiv = document.getElementById("invalidDescriptionDiv");
 
   const getAllFormValues = () => {
     const inputTextArea = document.getElementById("descriptionTextarea");
+    const suptotalInput = document.getElementById("suptotalInput");
+    const servidumbreInput = document.getElementById("servidumbreInput");
+    const supparcialInput = document.getElementById("supparcialInput");
     const editedText = inputTextArea.value;
   
     // Extraer los valores modificados de las variables
-    const regex = /Sup\. Total: ([\d\.,]+) m²\nServidumbre: ([\d\.,]+) m²\nSup\. Parcial: ([\d\.,]+) m²\nPrecio: (.*)/;
-    const matches = editedText.match(regex);
+    // const regex = /Sup\. Total: ([\d\.,]+) m²\nServidumbre: ([\d\.,]+) m²\nSup\. Parcial: ([\d\.,]+) m²\nPrecio: (.*)/;
+    // const matches = editedText.match(regex);
   
-    if (matches && matches.length === 5) {
-      invalidDescriptionDiv.style.display = "none";
-      const supTotal = matches[1];
-      const servidumbre = matches[2];
-      const supParcial = matches[3];
+    //   invalidDescriptionDiv.style.display = "none";
+      const supTotal = suptotalInput.value;
+      const servidumbre = servidumbreInput.value;
+      const supParcial = supparcialInput.value;
       
       const loteId = currentHotspotId;
       const status = document.getElementById('status').value === 'ht_disponible' ? true : false;
@@ -245,11 +250,6 @@ var invalidDescriptionDiv = document.getElementById("invalidDescriptionDiv");
         description,
         info // precio
       };
-    } else {
-      invalidDescriptionDiv.style.display = "block";
-      console.log("no matches");
-      return null;
-    }
   };
 
   // Esto no sirve que alguien lo arregle para mostrar otro tipo de mensaje (Opcional)
