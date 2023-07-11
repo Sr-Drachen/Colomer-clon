@@ -83,7 +83,7 @@ var invalidDescriptionDiv = document.getElementById("invalidDescriptionDiv");
       editButton.dataset.hotspotId = `Lote ${hotspot.title}`;
       editButton.dataset.id = hotspot.id;
       // editButton.dataset.description =  `${hotspot.info.description.replace(/m²/g, 'm²\n')}Precio: ${hotspot.info.info}`;
-      const descriptionObject = getVarsFromDescription(hotspot.info.description)
+      let descriptionObject = getVarsFromDescription(hotspot.info.description)
       editButton.dataset.suptotal = descriptionObject.suptotal;
       editButton.dataset.servidumbre = descriptionObject.servidumbre;
       editButton.dataset.supparcial = descriptionObject.supparcial;
@@ -173,13 +173,13 @@ var invalidDescriptionDiv = document.getElementById("invalidDescriptionDiv");
   }
 
   function getVarsFromDescription(description){
-    const regex = /<b>Sup\. Total:<\/b> ([\d\.,]+) m²<br><b>Servidumbre:<\/b> ([\d\.,]+) m²<br><b>Sup\. Parcial:<\/b> ([\d\.,]+) m²<br>/;
+    const regex = /<b>Sup\. Total:<\/b>\s*([\d\.,]+) m²<br><b>Servidumbre:<\/b>\s*([\d\.,]+) m²<br><b>Sup\. Parcial:<\/b>\s*([\d\.,]+) m²<br>/;
     const matches = description.match(regex);
   
     if (matches && matches.length === 4) {
-      suptotal = matches[1];
-      servidumbre = matches[2];
-      supparcial = matches[3];
+      suptotal = matches[1].trim();
+      servidumbre = matches[2].trim();
+      supparcial = matches[3].trim();
     }
 
     return {
@@ -225,11 +225,12 @@ var invalidDescriptionDiv = document.getElementById("invalidDescriptionDiv");
   }
 
   const getAllFormValues = () => {
-    const inputTextArea = document.getElementById("descriptionTextarea");
+    // const inputTextArea = document.getElementById("descriptionTextarea");
     const suptotalInput = document.getElementById("suptotalInput");
     const servidumbreInput = document.getElementById("servidumbreInput");
     const supparcialInput = document.getElementById("supparcialInput");
-    const editedText = inputTextArea.value;
+    const price = document.getElementById("precioInput");
+    // const editedText = inputTextArea.value;
   
     // Extraer los valores modificados de las variables
     // const regex = /Sup\. Total: ([\d\.,]+) m²\nServidumbre: ([\d\.,]+) m²\nSup\. Parcial: ([\d\.,]+) m²\nPrecio: (.*)/;
@@ -239,6 +240,7 @@ var invalidDescriptionDiv = document.getElementById("invalidDescriptionDiv");
       const supTotal = suptotalInput.value;
       const servidumbre = servidumbreInput.value;
       const supParcial = supparcialInput.value;
+      const info = price.value;
       
       const loteId = currentHotspotId;
       const status = document.getElementById('status').value === 'ht_disponible' ? true : false;
