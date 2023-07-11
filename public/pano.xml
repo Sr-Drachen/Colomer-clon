@@ -307,7 +307,7 @@
       <min tilt="-90" fovpixel="2" pan="0"/>
       <max fov="120" scaletofit="1" fovstereographic="270" tilt="90" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node29" description="&lt;b>Sup. Total:&lt;/b> 5.010,66 m²&lt;br>&lt;b>Servidumbre:&lt;/b>229,58 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b>4.781,08 m²&lt;br>" copyright="" datetime="01/01/1970 0:00" latitude="-38.880811" customnodeid="lote9" comment="" author="" longitude="-72.136417" info="$18.900.000" title="Lote 9" source="" tags="100MEDIA|loteprincipal|mostrar"/>
+    <userdata nodeid="node29" description="&lt;b>Sup. Total:&lt;/b> 5.010,66 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 229,58 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b> 4.781,08 m²&lt;br>" copyright="" datetime="01/01/1970 0:00" latitude="-38.880811" customnodeid="lote9" comment="" author="" longitude="-72.136417" info="$18.900.000" title="Lote 9" source="" tags="mostrar"/>
     <hotspots width="180" wordwrap="1" height="20">
       <label textcolor="0x000000" borderradius="1" background="1" enabled="1" width="180" backgroundalpha="1" bordercolor="0x000000" wordwrap="1" height="20" backgroundcolor="0xffffff" borderalpha="1" border="1" textalpha="1"/>
       <polystyle mode="1" backgroundalpha="0" bordercolor="0xffffff" backgroundcolor="0x0000ff" borderalpha="1" handcursor="0"/>
@@ -364,7 +364,7 @@
       <min tilt="-90" fovpixel="2" pan="0"/>
       <max fov="120" scaletofit="1" fovstereographic="270" tilt="90" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node10" description="&lt;b>Sup. Total:&lt;/b> 5.087,0 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 237,81 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b>4.849,19 m²&lt;br>" copyright="" datetime="" latitude="" customnodeid="lote11" comment="" author="" longitude="" info="$18.900.000" title="Lote 11" source="" tags="Fotos piso|loteprincipal|mostrar"/>
+    <userdata nodeid="node10" description="&lt;b>Sup. Total:&lt;/b> 5.087,0 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 237,81 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b> 4.849,19 m²&lt;br>" copyright="" datetime="" latitude="" customnodeid="lote11" comment="" author="" longitude="" info="$18.900.000" title="Lote 11" source="" tags="mostrar"/>
     <hotspots width="180" wordwrap="1" height="20">
       <label textcolor="0x000000" borderradius="1" background="1" enabled="1" width="180" backgroundalpha="1" bordercolor="0x000000" wordwrap="1" height="20" backgroundcolor="0xffffff" borderalpha="1" border="1" textalpha="1"/>
       <polystyle mode="1" backgroundalpha="0" bordercolor="0xffffff" backgroundcolor="0x0000ff" borderalpha="1" handcursor="0"/>
@@ -392,7 +392,7 @@
       <min tilt="-90" fovpixel="2" pan="0"/>
       <max fov="120" scaletofit="1" fovstereographic="270" tilt="90" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node13" description="&lt;b>Sup. Total:&lt;/b> 5.003,27 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 233,64 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b>4.769,63 m²&lt;br>" copyright="" datetime="" latitude="" customnodeid="lote12" comment="" author="" longitude="" info="$18.900.000" title="Lote 12" source="" tags="Fotos piso|loteprincipal|mostrar"/>
+    <userdata nodeid="node13" description="&lt;b>Sup. Total:&lt;/b> 5.003,27 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 233,64 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b> 4.769,63 m²&lt;br>" copyright="" datetime="" latitude="" customnodeid="lote12" comment="" author="" longitude="" info="$18.900.000" title="Lote 12" source="" tags="mostrar"/>
     <hotspots width="180" wordwrap="1" height="20">
       <label textcolor="0x000000" borderradius="1" background="1" enabled="1" width="180" backgroundalpha="1" bordercolor="0x000000" wordwrap="1" height="20" backgroundcolor="0xffffff" borderalpha="1" border="1" textalpha="1"/>
       <polystyle mode="1" backgroundalpha="0" bordercolor="0xffffff" backgroundcolor="0x0000ff" borderalpha="1" handcursor="0"/>
@@ -420,7 +420,7 @@
       <min tilt="-90" fovpixel="2" pan="0"/>
       <max fov="120" scaletofit="1" fovstereographic="270" tilt="90" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node14" description="&lt;b>Sup. Total:&lt;/b> 4.766,7 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 233,37 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b>4.766,7 m²&lt;br>" copyright="" datetime="" latitude="" customnodeid="lote13" comment="" author="" longitude="" info="$18.900.000" title="Lote 13" source="" tags="Fotos piso|loteprincipal|mostrar"/>
+    <userdata nodeid="node14" description="&lt;b>Sup. Total:&lt;/b> 4.766,7 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 233,37 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b> 4.766,7 m²&lt;br>" copyright="" datetime="" latitude="" customnodeid="lote13" comment="" author="" longitude="" info="$18.900.000" title="Lote 13" source="" tags="mostrar"/>
     <hotspots width="180" wordwrap="1" height="20">
       <label textcolor="0x000000" borderradius="1" background="1" enabled="1" width="180" backgroundalpha="1" bordercolor="0x000000" wordwrap="1" height="20" backgroundcolor="0xffffff" borderalpha="1" border="1" textalpha="1"/>
       <polystyle mode="1" backgroundalpha="0" bordercolor="0xffffff" backgroundcolor="0x0000ff" borderalpha="1" handcursor="0"/>
@@ -448,7 +448,7 @@
       <min tilt="-90" fovpixel="2" pan="0"/>
       <max fov="120" scaletofit="1" fovstereographic="270" tilt="90" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node9" description="&lt;b>Sup. Total:&lt;/b> 5.221,43 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 331,13 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b>4.890,3 m²&lt;br>" copyright="" datetime="" latitude="" customnodeid="lote14" comment="" author="" longitude="" info="$18.900.000" title="Lote 14" source="" tags="Fotos piso|loteprincipal|mostrar"/>
+    <userdata nodeid="node9" description="&lt;b>Sup. Total:&lt;/b> 5.221,43 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 331,13 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b> 4.890,3 m²&lt;br>" copyright="" datetime="" latitude="" customnodeid="lote14" comment="" author="" longitude="" info="$18.900.000" title="Lote 14" source="" tags="mostrar"/>
     <hotspots width="180" wordwrap="1" height="20">
       <label textcolor="0x000000" borderradius="1" background="1" enabled="1" width="180" backgroundalpha="1" bordercolor="0x000000" wordwrap="1" height="20" backgroundcolor="0xffffff" borderalpha="1" border="1" textalpha="1"/>
       <polystyle mode="1" backgroundalpha="0" bordercolor="0xffffff" backgroundcolor="0x0000ff" borderalpha="1" handcursor="0"/>
@@ -477,7 +477,7 @@
       <min tilt="-90" fovpixel="2" pan="0"/>
       <max fov="120" scaletofit="1" fovstereographic="270" tilt="90" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node21" description="&lt;b>Sup. Total:&lt;/b>5.033,35 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 601,21 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b>4.432,14 m²&lt;br>" copyright="" datetime="01/01/1970 0:00" latitude="-38.881178" customnodeid="lote15" comment="" author="" longitude="-72.135988" info="$18.900.000" title="Lote 15" source="" tags="100MEDIA|loteprincipal|mostrar"/>
+    <userdata nodeid="node21" description="&lt;b>Sup. Total:&lt;/b> 5.033,35 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 601,21 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b> 4.432,14 m²&lt;br>" copyright="" datetime="01/01/1970 0:00" latitude="-38.881178" customnodeid="lote15" comment="" author="" longitude="-72.135988" info="$18.900.000" title="Lote 15" source="" tags="mostrar"/>
     <hotspots width="180" wordwrap="1" height="20">
       <label textcolor="0x000000" borderradius="1" background="1" enabled="1" width="180" backgroundalpha="1" bordercolor="0x000000" wordwrap="1" height="20" backgroundcolor="0xffffff" borderalpha="1" border="1" textalpha="1"/>
       <polystyle mode="1" backgroundalpha="0" bordercolor="0xffffff" backgroundcolor="0x0000ff" borderalpha="1" handcursor="0"/>
@@ -506,7 +506,7 @@
       <min tilt="-90" fovpixel="2" pan="0"/>
       <max fov="120" scaletofit="1" fovstereographic="270" tilt="90" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node24" description="&lt;b>Sup. Total:&lt;/b> 5.022,66 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 336,15 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b>4.953,82 m²&lt;br>" copyright="" datetime="01/01/1970 0:00" latitude="-38.881554" customnodeid="lote16" comment="" author="" longitude="-72.135646" info="$18.900.000" title="Lote 16" source="" tags="100MEDIA|loteprincipal|mostrar"/>
+    <userdata nodeid="node24" description="&lt;b>Sup. Total:&lt;/b> 5.022,66 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 336,15 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b> 4.953,82 m²&lt;br>" copyright="" datetime="01/01/1970 0:00" latitude="-38.881554" customnodeid="lote16" comment="" author="" longitude="-72.135646" info="$18.900.000" title="Lote 16" source="" tags="mostrar"/>
     <hotspots width="180" wordwrap="1" height="20">
       <label textcolor="0x000000" borderradius="1" background="1" enabled="1" width="180" backgroundalpha="1" bordercolor="0x000000" wordwrap="1" height="20" backgroundcolor="0xffffff" borderalpha="1" border="1" textalpha="1"/>
       <polystyle mode="1" backgroundalpha="0" bordercolor="0xffffff" backgroundcolor="0x0000ff" borderalpha="1" handcursor="0"/>
@@ -535,7 +535,7 @@
       <min tilt="-90" fovpixel="2" pan="0"/>
       <max fov="120" scaletofit="1" fovstereographic="270" tilt="90" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node27" description="&lt;b>Sup. Total:&lt;/b> 5.011,06 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 57,25 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b>4.686,51 m²&lt;br>" copyright="" datetime="01/01/1970 0:00" latitude="-38.881269" customnodeid="lote17" comment="" author="" longitude="-72.136598" info="$18.900.000" title="Lote 17" source="" tags="100MEDIA|loteprincipal|mostrar"/>
+    <userdata nodeid="node27" description="&lt;b>Sup. Total:&lt;/b> 5.011,06 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 57,25 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b> 4.686,51 m²&lt;br>" copyright="" datetime="01/01/1970 0:00" latitude="-38.881269" customnodeid="lote17" comment="" author="" longitude="-72.136598" info="$18.900.000" title="Lote 17" source="" tags="mostrar"/>
     <hotspots width="180" wordwrap="1" height="20">
       <label textcolor="0x000000" borderradius="1" background="1" enabled="1" width="180" backgroundalpha="1" bordercolor="0x000000" wordwrap="1" height="20" backgroundcolor="0xffffff" borderalpha="1" border="1" textalpha="1"/>
       <polystyle mode="1" backgroundalpha="0" bordercolor="0xffffff" backgroundcolor="0x0000ff" borderalpha="1" handcursor="0"/>
@@ -564,7 +564,7 @@
       <min tilt="-90" fovpixel="2" pan="0"/>
       <max fov="120" scaletofit="1" fovstereographic="270" tilt="90" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node36" description="&lt;b>Sup. Total:&lt;/b> 10.483,13 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 0 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b>10.483,13 m²&lt;br>" copyright="" datetime="01/01/1970 0:00" latitude="-38.879484" customnodeid="lote18" comment="" author="" longitude="-72.136497" info="$18.900.000" title="Lote 18" source="" tags="100MEDIA|loteprincipal|mostrar"/>
+    <userdata nodeid="node36" description="&lt;b>Sup. Total:&lt;/b> 10.483,13 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 0 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b> 10.483,13 m²&lt;br>" copyright="" datetime="01/01/1970 0:00" latitude="-38.879484" customnodeid="lote18" comment="" author="" longitude="-72.136497" info="$18.900.000" title="Lote 18" source="" tags="mostrar|nodisponible"/>
     <hotspots width="180" wordwrap="1" height="20">
       <label textcolor="0x000000" borderradius="1" background="1" enabled="1" width="180" backgroundalpha="1" bordercolor="0x000000" wordwrap="1" height="20" backgroundcolor="0xffffff" borderalpha="1" border="1" textalpha="1"/>
       <polystyle mode="1" backgroundalpha="0" bordercolor="0xffffff" backgroundcolor="0x0000ff" borderalpha="1" handcursor="0"/>
@@ -592,7 +592,7 @@
       <min tilt="-90" fovpixel="2" pan="0"/>
       <max fov="120" scaletofit="1" fovstereographic="270" tilt="90" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node19" description="&lt;b>Sup. Total:&lt;/b> 5.470,10 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 812,9 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b> 6.283,0m²&lt;br>" copyright="" datetime="" latitude="" customnodeid="lote19" comment="" author="" longitude="" info="$18.900.000" title="Lote A" source="" tags="Fotos piso|lotesecundario|mostrar"/>
+    <userdata nodeid="node19" description="&lt;b>Sup. Total:&lt;/b> 5.470,10 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 812,9 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b> 6.283,0 m²&lt;br>" copyright="" datetime="" latitude="" customnodeid="lote19" comment="" author="" longitude="" info="$18.900.000" title="Lote A" source="" tags="mostrar"/>
     <hotspots width="180" wordwrap="1" height="20">
       <label textcolor="0x000000" borderradius="1" background="1" enabled="1" width="180" backgroundalpha="1" bordercolor="0x000000" wordwrap="1" height="20" backgroundcolor="0xffffff" borderalpha="1" border="1" textalpha="1"/>
       <polystyle mode="1" backgroundalpha="0" bordercolor="0xffffff" backgroundcolor="0x0000ff" borderalpha="1" handcursor="0"/>
@@ -620,7 +620,7 @@
       <min tilt="-90" fovpixel="2" pan="0"/>
       <max fov="120" scaletofit="1" fovstereographic="270" tilt="90" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node17" description="&lt;b>Sup. Total:&lt;/b> 5112,34 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 0 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b> 5112,34m²&lt;br>" copyright="" datetime="" latitude="" customnodeid="lote20" comment="" author="" longitude="" info="$18.900.000" title="Lote B" source="" tags="Fotos piso|lotesecundario|mostrar"/>
+    <userdata nodeid="node17" description="&lt;b>Sup. Total:&lt;/b> 5.112,34 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 0 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b> 5.112,34 m²&lt;br>" copyright="" datetime="" latitude="" customnodeid="lote20" comment="" author="" longitude="" info="$18.900.000" title="Lote B" source="" tags="mostrar"/>
     <hotspots width="180" wordwrap="1" height="20">
       <label textcolor="0x000000" borderradius="1" background="1" enabled="1" width="180" backgroundalpha="1" bordercolor="0x000000" wordwrap="1" height="20" backgroundcolor="0xffffff" borderalpha="1" border="1" textalpha="1"/>
       <polystyle mode="1" backgroundalpha="0" bordercolor="0xffffff" backgroundcolor="0x0000ff" borderalpha="1" handcursor="0"/>
@@ -648,7 +648,7 @@
       <min tilt="-90" fovpixel="2" pan="0"/>
       <max fov="120" scaletofit="1" fovstereographic="270" tilt="90" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node16" description="&lt;b>Sup. Total:&lt;/b> 6.042,84 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 418,38 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b> 6.461,22,0m²&lt;br>" copyright="" datetime="" latitude="" customnodeid="lote21" comment="" author="" longitude="" info="$18.900.000" title="Lote C" source="" tags="Fotos piso|lotesecundario|mostrar"/>
+    <userdata nodeid="node16" description="&lt;b>Sup. Total:&lt;/b> 6.042,84 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 418,34 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b> 6.461,22,0 m²&lt;br>" copyright="" datetime="" latitude="" customnodeid="lote21" comment="" author="" longitude="" info="$18.900.000" title="Lote C" source="" tags="mostrar"/>
     <hotspots width="180" wordwrap="1" height="20">
       <label textcolor="0x000000" borderradius="1" background="1" enabled="1" width="180" backgroundalpha="1" bordercolor="0x000000" wordwrap="1" height="20" backgroundcolor="0xffffff" borderalpha="1" border="1" textalpha="1"/>
       <polystyle mode="1" backgroundalpha="0" bordercolor="0xffffff" backgroundcolor="0x0000ff" borderalpha="1" handcursor="0"/>
@@ -676,7 +676,7 @@
       <min tilt="-90" fovpixel="2" pan="0"/>
       <max fov="120" scaletofit="1" fovstereographic="270" tilt="90" pan="360" fovfisheye="360"/>
     </view>
-    <userdata nodeid="node15" description="&lt;b>Sup. Total:&lt;/b> 5.243,44 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 0m²&lt;br>&lt;b>Sup. Parcial:&lt;/b> 5.243,44m²&lt;br>" copyright="" datetime="" latitude="" customnodeid="lote22" comment="" author="" longitude="" info="$18.900.000" title="Lote D" source="" tags="Fotos piso|lotesecundario|mostrar"/>
+    <userdata nodeid="node15" description="&lt;b>Sup. Total:&lt;/b> 5.243,44 m²&lt;br>&lt;b>Servidumbre:&lt;/b> 0 m²&lt;br>&lt;b>Sup. Parcial:&lt;/b> 5.243,44 m²&lt;br>" copyright="" datetime="" latitude="" customnodeid="lote22" comment="" author="" longitude="" info="$18.900.000" title="Lote D" source="" tags="mostrar"/>
     <hotspots width="180" wordwrap="1" height="20">
       <label textcolor="0x000000" borderradius="1" background="1" enabled="1" width="180" backgroundalpha="1" bordercolor="0x000000" wordwrap="1" height="20" backgroundcolor="0xffffff" borderalpha="1" border="1" textalpha="1"/>
       <polystyle mode="1" backgroundalpha="0" bordercolor="0xffffff" backgroundcolor="0x0000ff" borderalpha="1" handcursor="0"/>

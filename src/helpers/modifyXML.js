@@ -16,7 +16,7 @@ const getData = async () => {
   }
 };
 
-const updateHotspotAttributes = async (hotspotId, status, newInfo) => {
+const updateHotspotAttributes = async (hotspotId, status, description, newInfo) => {
   try {
     const result = await getData();
     const hotspot = result.tour.panorama[0].hotspots[0].hotspot.find(
@@ -30,7 +30,8 @@ const updateHotspotAttributes = async (hotspotId, status, newInfo) => {
       // hotspot.$.title = newTitle.length !== 0 ? newTitle : hotspot.$.title;
       hotspot.$.skinid = status ? 'ht_disponible' : 'ht_noDisponible';
       userdata[0].$.tags = status ? 'mostrar' : 'mostrar|nodisponible';
-      userdata[0].$.info = !!newInfo ? newInfo : userdata[0].$.info;
+      userdata[0].$.description = description;
+      userdata[0].$.info = newInfo;
       const builder = new xml2js.Builder();
       const xml = builder.buildObject(result);
       await fs.promises.writeFile(xmlFilePath, xml);

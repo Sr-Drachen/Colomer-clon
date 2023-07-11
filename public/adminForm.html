@@ -68,11 +68,23 @@
           </div>
           <div class="modal-body">
             <h6 class="modal-subtitle">Nombre</h6>
-            <input id="nameInput" class="form-control modal-input" type="text" required>
-            
-            <h6 class="modal-subtitle">Descripción</h6>
-            <textarea id="descriptionTextarea" class="form-control modal-textarea" readonly></textarea>
+            <input id="nameInput" class="form-control modal-input" type="text" readonly>
 
+            <h6 class="modal-subtitle">Precio</h6>
+            <input id="precioInput" class="form-control modal-input" type="text" input>
+
+            <h6 class="modal-subtitle">Sup. Total</h6>
+            <input id="suptotalInput" class="form-control modal-input" type="text" input>
+
+            <h6 class="modal-subtitle">Servidumbre</h6>
+            <input id="servidumbreInput" class="form-control modal-input" type="text" input>
+
+            <h6 class="modal-subtitle">Sub. Parcial</h6>
+            <input id="supparcialInput" class="form-control modal-input" type="text" input>
+            
+            <!-- <h6 class="modal-subtitle">Descripción</h6>
+            <textarea id="descriptionTextarea" class="form-control modal-textarea"></textarea> -->
+            <div id="invalidDescriptionDiv" class="not-valid-description">Descripción no válida</div>
             <h6 class="modal-subtitle">Estado</h6>
             <div class="form-group">
               <select id="status" name="status" class="form-control modal-select">
